@@ -1,0 +1,271 @@
+$product-horizontal-width: calc((100vw / 2 ) - 16px)
+
+.product__item
+  @extend .my-4
+  width: 100%
+  > .ant-card-body
+    padding: 8px
+
+  .product__img
+    @extend .shadow
+    @extend .img-cover
+    @extend .mr-6
+    width: 20%
+    float: left
+
+  .product__title
+    @extend .text-h3
+    @extend .second-dark-color
+    @extend .ma-0
+    @extend .mb-1
+    @extend .py-1
+    @include lines(2)
+    line-height: 1.5
+
+  .product__desc
+    @extend .second-color
+    @include lines(3)
+
+  .add-quantity
+    padding: 0px
+    font-size: $font-h2
+    // @extend .rounded-xl
+    // border: 1px solid #C8C8C8
+    // display: flex
+    // flex-direction: row
+    // justify-content: center
+    // align-items: center
+
+.product__price
+  @extend .text-h3
+  color: $primary-color
+
+.product__details
+  @extend .px-6
+  padding-bottom: 130px !important
+  position: relative
+  width: 100vw
+  overflow: hidden
+
+  .block__content
+    position: relative
+    z-index: 100
+
+    &--left
+      width: 50vw
+      // min-height: 70vw
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: flex-start
+
+  .product__img
+    //@extend .rounded-l-circle
+    border-top-left-radius: 120vw
+    border-bottom-left-radius: 120vw
+    background: white
+    //position: absolute
+    //right: calc( ( 75vw / 2 ) - 75vw )
+    //bottom: calc( 100vw)
+    max-width: 40%
+    display: flex
+    align-items: center
+    img
+      @extend .shadow
+      width: 90%
+      height: 70%
+
+
+  .product__title
+    @extend .text-h1
+    @extend .second-dark-color
+    @extend .mb-1
+
+  .product__cate
+    @extend .text-body
+    @extend .second-dark-color
+    @extend .mb-1
+
+  .product__rate
+    @extend .mt-4
+    font-size: 18px
+    color: $primary-color
+
+  .product__tag
+    @extend .mt-2
+    @extend .rounded-lg
+    @extend .text-h4
+    border-color: $primary-color
+    background: transparent
+    padding: 10px
+    color: $primary-dark-color
+    height: auto
+
+  .product__favorite
+    @extend .mt-2
+    @extend .rounded-lg
+    @extend .text-h4
+    border-color: $primary-color
+    background: transparent
+    padding: 10px
+    color: $primary-dark-color
+    height: auto
+
+  .product__share
+    @extend .mt-2
+    @extend .rounded-lg
+    @extend .text-h4
+    border-color: $primary-color
+    background: transparent
+    padding: 10px
+    color: $primary-dark-color
+    height: auto 
+
+  .product__desc
+    display: -webkit-box
+    -webkit-line-clamp: 3
+    -webkit-box-orient: vertical
+    overflow: hidden
+
+.add-quantity
+  @extend .rounded-xl
+  border: 1px solid #C8C8C8
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  padding: 8px 4px
+  font-size: $font-h1
+
+.product__footer
+  @extend .rounded-t-lg
+  @extend .py-5
+  background: $white
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2)
+  overflow: hidden
+  position: fixed
+  z-index: 999
+  bottom: 0
+  left: 0
+  right: 0
+  width: 100%
+
+  
+  /* .product__favorite
+    @extend .rounded-circle
+    border-color: transparent
+    background: $component-background
+    color: $primary-color
+    font-size: $font-h3
+    padding: 6px
+    height: auto
+    line-height: 1
+    position: absolute
+    top: -15px
+    left: 60px */
+  .product__price
+    @extend .text-h1
+    @extend .second-dark-color
+    font-size: 26px
+    font-weight: bold
+
+  .add-cart
+    @extend .shadow
+    @extend .text-h3
+    border-color: transparent
+    background: $primary-color !important
+    color: $text-color-inverse
+
+  .remove-item
+    @extend .shadow
+    @extend .text-h3
+    border-color: transparent
+    background: #FF9052 !important
+    color: #fff
+
+.product-scrolls
+  @extend .pr-0
+  display: flex
+  flex-wrap: wrap
+
+.product__item--horizontal
+  @extend .ml-0
+  @extend .mr-4
+  @extend .mt-2
+  @extend .mb-4
+  @extend .c-pointer
+  @extend .rounded-lg
+  width: calc( #{$product-horizontal-width} - 8px)
+  > .ant-card-body
+    @extend .pa-4
+
+  .product__img
+    @extend .mb-4
+    @extend .img-cover
+    @extend .shadow
+    width: calc( #{$product-horizontal-width} - 90px)
+    height: calc( #{$product-horizontal-width} - 60px)
+
+  .product__title
+    @include lines(2)
+    @extend .mb-2
+    @extend .second-dark-color
+    @extend .text-center
+    @extend .text-h3
+    line-height: 24px
+    height: 48px
+
+  .product__price
+    @extend .text-h3
+    color: $primary-color
+
+  .product__icon
+    @extend .rounded-circle
+    @extend .pa-2
+    background: $component-background
+    color: $tertiary-color
+    font-size: $font-h3
+
+  .product__rate
+    @extend .mb-2
+    font-size: $font-base
+
+.product__relative
+  @extend .mb-4
+  @extend .rounded-lg
+  width: 100%
+  > .ant-card-body
+    @extend .pa-4
+
+  .product__img
+    @extend .img-cover
+    @extend .mr-4
+    width: 20vw
+    // height: 27vw
+    float: left
+
+  .product__title
+    @extend .mb-1
+    @extend .text-h3
+    @extend .second-dark-color
+    @include lines(2)
+
+  .product__desc
+    @extend .mb-1
+    @include lines(2)
+
+  .product__price
+    @extend .text-h3
+    color: $primary-color
+
+  .product__icon
+    @extend .rounded-circle
+    @extend .pa-2
+    background: $component-background
+    color: $tertiary-color
+    font-size: $font-h3
+
+  .product__rate
+    @extend .mb-2
+    color: $tertiary-color
+    font-size: $font-base

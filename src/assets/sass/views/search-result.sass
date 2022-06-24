@@ -1,0 +1,136 @@
+.search-result
+  .ant-card-meta-description
+    min-height: auto !important
+  .ant-card-meta-detail > div:not(:last-child)
+    margin-bottom: 0
+
+  .item-favorite
+    display: none
+
+  .product__item
+    @extend .mt-4
+    @extend .mb-0
+    border-radius: 2px !important
+    > .ant-card-body
+      padding: 8px
+
+    .product
+      &__img
+        width: 48px
+        height: 48px
+        border-radius: 5px !important
+
+      &__title
+        @extend .text-h3
+        @extend .second-dark-color
+
+      &__price
+        display: none
+
+      &__desc
+        @extend .text-caption
+        @extend .second-color
+        display: none
+
+    .product__desc:first-child
+      display: block
+      -webkit-line-clamp: 1
+
+  .remedy__item
+    @extend .ml-0
+    background: $white
+    border-radius: 2px !important
+    min-height: auto
+    width: 100%
+    @extend .pa-2
+
+    > .ant-card-body
+      @extend .pa-0
+
+    .remedy__img
+      @extend .shadow
+      @extend .img-cover
+      position: relative
+      width: 48px
+      height: 48px
+      border-radius: 5px !important
+      float: left
+      @extend .mr-6
+
+    .remedy__title
+      @extend .text-h3
+      @extend .second-dark-color
+      @extend .ma-0
+
+    .remedy__cate
+      @extend .text-caption
+      @extend .second-color
+      @extend .ma-0
+      @include lines(1)
+
+    .remedy__icon
+      display: none
+
+  .naturopath__item
+    @extend .mt-4
+    @extend .mb-0
+    min-height: auto
+    background: $white
+    padding: 8px
+    border-radius: 2px !important
+
+    > .ant-card-body
+      @extend .pa-0
+      min-height: auto
+      .ant-col
+        width: auto
+
+    .naturopath__img
+      position: relative
+      min-width: auto
+      width: 48px !important
+      height: 48px !important
+      border-radius: 5px !important
+      float: left
+      //@extend .mr-6
+
+    .naturopath__title
+      @extend .text-h3
+      @extend .second-dark-color
+      // margin-left: -18px !important
+
+    .naturopath__cate
+      @extend .text-caption
+      @extend .second-color
+      @include lines(1)
+      // margin-left: -18px !important
+
+    .naturopath__desc,
+    .naturopath__rate,
+    .naturopath__icon
+      display: none
+
+  .article__item
+    border-radius: 2px !important
+
+    > .ant-card-body
+      @extend .pa-2
+
+    .article__img
+      @extend .mr-6
+      width: 48px
+      height: 48px
+      border-radius: 5px !important
+
+    .article__title
+      @extend .mb-0
+      @extend .text-h3
+      -webkit-line-clamp: 1
+
+    .article__desc,
+    .article__category
+      display: none
+
+    .article__author
+      @extend .text-caption
+      -webkit-line-clamp: 1

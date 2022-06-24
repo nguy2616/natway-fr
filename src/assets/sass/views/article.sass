@@ -1,0 +1,189 @@
+$article-horizontal-width: calc((100vw / 1.23 ) - 16px)
+
+.article-scrolls
+  @extend .pb-4
+  @extend .pr-4
+  overflow-x: scroll
+  overflow-y: hidden
+  display: flex
+
+.article__item--horizontal
+  @extend .ml-4
+  @extend .c-pointer
+  @extend .rounded-lg
+
+  > .ant-card-body
+    @extend .pa-4
+
+  .article__img
+    @extend .rounded-t-lg
+    @extend .img-cover
+    width: calc( #{$article-horizontal-width} - 48px)
+    height: calc((#{$article-horizontal-width} - 48px)/2)
+
+  .article__title
+    @extend .text-content
+    @extend .second-dark-color
+    @extend .mb-0
+    @extend .mt-0
+    @include lines(3)
+    white-space: break-spaces
+
+  .article__cate
+    @extend .text-caption
+    @extend .text-capitalize
+    @extend .second-color
+    @include lines(1)
+    white-space: break-spaces
+
+.article__item
+  @extend .rounded-lg
+  @extend .mb-4
+  width: 100%
+  > .ant-card-body
+    @extend .pa-4
+
+  .article__img
+    @extend .rounded-lg
+    @extend .shadow
+    @extend .img-cover
+    @extend .mr-4
+    width: 27vw
+    height: 27vw
+    float: left
+
+  .article__title
+    @extend .mb-1
+    @extend .text-h4
+    @extend .second-dark-color
+    @include lines(2)
+
+  .article__author
+    @extend .text-body
+    @extend .second-color
+    @include lines(1)
+
+  .article__category
+    @extend .mb-2
+    @extend .rounded-lg
+    @extend .text-caption
+    @extend .text-capitalize
+    border-color: transparent
+    background: rgba(201, 211, 175, 0.5)
+    color: $second-dark-color
+    padding: 4px 8px
+    height: auto
+
+.article-details
+  @extend .shadow
+  @extend .rounded-t-xl
+  @extend .mt-n5
+  background: $component-background
+  position: relative
+  z-index: 99
+
+  .article-title
+    line-height: 1.2
+
+
+
+.articles.ant-tabs-card
+  background: $component-background
+
+  >.ant-tabs-content
+    // @extend .pa-4
+
+  >.ant-tabs-tabpane
+    background: $component-background
+
+  >.ant-tabs-bar
+    @extend .mb-0
+    @extend .pr-2
+    border-color: $component-background
+    
+    .ant-tabs-tab
+      border-color: transparent
+      background: transparent
+      
+    .ant-tabs-tab-active
+      border-color: transparent
+      background: $component-background
+
+  .ant-tabs-card-bar
+    .ant-tabs-tab
+      @extend .rounded-xl
+      @extend .px-3
+      color: $second-color
+
+    .ant-tabs-tab:hover,
+    .ant-tabs-tab-active
+      border-color: transparent
+      background: $primary-color
+      color: $white
+
+
+  .ant-tabs-tab-btn-disabled,
+  .ant-tabs-tab-btn-disabled:hover
+    display: none
+
+  .ant-tabs-tab-prev-icon-target,
+  .ant-tabs-tab-next-icon-target
+    font-size: 22px
+
+.articles__banner
+  @extend .rounded-lg
+  display: flex
+  align-items: center
+  position: relative
+  width: calc(100vw - 32px)
+  height: calc( (100vw - 32px) / 1.41666 )
+
+  .banner
+    &__cover
+      @extend .rounded-lg
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.88) -57.08%, rgba(0, 0, 0, 0) 103.75%)
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+    &__img
+      @extend .rounded-lg
+      @extend .img-cover
+      width: 100%
+      height: 100%
+
+    &__category
+      @extend .rounded-lg
+      @extend .text-caption
+      border-color: transparent
+      background: rgba(40,40,40, 0.5)
+      position: absolute
+      left: 16px
+      top: 16px
+      padding: 8px 16px
+      color: $white
+
+    &__bookmark
+      border: none
+      border-color: transparent
+      background: transparent
+      color: $white
+      position: absolute
+      right: 16px
+      top: 12px
+
+      &__title
+        @extend .text-h2
+        @extend .text-capitalize
+        color: $white
+
+    &__title
+      @extend .text-h1
+      color: $white
+      text-align: center
+      position: absolute
+      width: 100%
+
+.ant-carousel .slick-dots-bottom
+  bottom: 24px

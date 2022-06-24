@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="94" height="94" viewBox="0 0 94 94">
+  <defs>
+    <filter id="Ellipse_3" x="0" y="0" width="94" height="94" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Chat_Button" data-name="Chat Button" transform="translate(-304 -711)">
+    <g transform="matrix(1, 0, 0, 1, 304, 711)" filter="url(#Ellipse_3)">
+      <circle id="Ellipse_3-2" data-name="Ellipse 3" cx="32" cy="32" r="32" transform="translate(15 9)" fill="#92A65F"/>
+    </g>
+    <g data-name="Chat Icons" transform="translate(338.787 740.732)">
+      <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 36 8 L 28 8 L 28 10 L 36 10 C 37.0625 10 38 10.9375 38 12 L 38 24 C 38 25.125 37.0625 26 36 26 L 32 26 L 32 29.125 L 26.5 26 L 20 26 C 18.875 26 18 25.125 18 24 L 18 22 L 16 22 L 16 24 C 16 26.25 17.75 28 19.9375 28 L 26 28 L 32.75 31.875 C 32.9375 32 33.0625 32 33.25 32 C 33.625 32 34 31.75 34 31.25 L 34 28 L 36 28 C 38.1875 28 40 26.25 40 24.0625 L 40 12 C 40 9.8125 38.1875 8 36 8 Z M 26 16 L 26 4 C 26 1.8125 24.1875 0 22 0 L 4 0 C 1.75 0 0 1.8125 0 4 L 0 16 C 0 18.25 1.75 20 4 20 L 6 20.0625 L 6 23.25 C 6 23.75 6.3125 24 6.75 24 C 6.875 24 7 24 7.1875 23.875 L 14 20 L 22 20 C 24.1875 20 26 18.25 26 16 Z M 13.4375 18 L 8 21.125 L 8 18 L 4 18 C 2.875 18 2 17.125 2 16 L 2 4 C 2 2.9375 2.875 2 4 2 L 22 2 C 23.0625 2 24 2.9375 24 4 L 24 16 C 24 17.125 23.0625 18 22 18 Z M 13.4375 18 " transform="translate(-8 -4)" fill="#F5F7F2"/>
+    </g>
+  </g>
+</svg>

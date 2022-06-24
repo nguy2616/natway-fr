@@ -1,0 +1,136 @@
+
+.donestep
+  margin: 5px
+  height: 8px
+  width: 40px
+  background: cadetblue
+
+.nextstep
+  margin: 5px
+  height: 8px
+  width: 40px
+  background: #ccc
+
+.fixed-top
+    position: fixed
+    right: 0px
+    left: 0px
+    top: 0px
+
+.fixed-bot
+    position: fixed
+    right: 0px
+    left: 0px
+    bottom: 0px
+
+.user-profile
+  background: $primary-color
+  background: linear-gradient(145deg, $primary-color 50%, $white 100%)
+  background: linear-gradient(135deg, rgba(73,89,54,1) 20%, rgba(95,112,47,1) 36%, rgba(122,139,38,1) 54%, rgba(151,169,28,1) 72%, rgba(235,255,0,1) 100%)
+  background: linear-gradient(140deg, rgba(73,89,54,1) 30%, rgba(101,118,45,1) 50%, rgba(135,152,34,1) 65%, rgba(170,188,22,1) 80%, rgba(235,255,0,1) 100%)
+
+.account
+  &-logout
+    .login-block
+      background: white
+    
+    .menu-block
+      background: $component-background
+
+      .icon-bg
+        width: 32px
+        height: 32px
+        color: #ffffff
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 50%
+
+        .icon-md
+          width: 12px
+        .icon-sm
+          width: 16px
+
+      .menu-label
+        display: flex
+        align-items: center
+
+  &-login
+    .profile-block
+      background: $primary-color
+
+      .header-filter
+        background: url('~@/assets/image/accountBackground.png') center center
+        background-size: cover
+        height: 20vh
+        
+      .header-img
+        @extend .rounded-circle
+        position: absolute
+        left: 0
+        right: 0
+        margin: 0 auto
+        top: -120px
+        width: 180px
+        border: 5px solid $component-background
+      
+      .camera-badge
+        @extend .rounded-circle
+        position: absolute
+        left: 130px
+        right: 0
+        margin: 0 auto
+        top: 0px
+        width: 60px
+        // border: 5px solid $component-background
+        
+      .body-card
+        @extend .rounded-t-xl
+        background: $component-background
+        position: relative
+        z-index: 99
+
+        .icon-bg
+          width: 60px
+          height: 60px
+          color: #ffffff
+          display: flex
+          justify-content: center
+          align-items: center
+          border-radius: 50%
+          background: $primary-color
+          border: 5px solid $component-background
+          
+          @extend .rounded-circle
+          position: absolute
+          left: 120px
+          right: 0
+          margin: 0 auto
+          top: 0px
+
+          .icon-lg
+            width: 24px
+
+    .menu-block
+      background: #E4E4E4
+
+      .body-card
+        background: $component-background
+
+        .icon-bg
+          width: 32px
+          height: 32px
+          color: #ffffff
+          display: flex
+          justify-content: center
+          align-items: center
+          border-radius: 50%
+
+          .icon-md
+            width: 12px
+          .icon-sm
+            width: 16px
+
+        .menu-label
+          display: flex
+          align-items: center

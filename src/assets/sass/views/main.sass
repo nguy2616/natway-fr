@@ -1,0 +1,180 @@
+body
+  @extend .text-body
+  
+body,
+.a-application
+  background: $component-background
+  
+.page-layout
+  height: 100vh
+  overflow-y: scroll
+
+  &.hasBottom
+    height: calc(100vh - 64px)
+
+  .layout
+    &-header
+      // border-bottom: 0.5px solid $grey
+      background: $component-background
+      padding: 12px 0
+      line-height: 2
+      height: auto
+
+    &-header-colored
+      // border-bottom: 0.5px solid $grey
+      background: $primary-color
+      padding: 12px 0
+      line-height: 2
+    
+    &-header-bordered
+      border-bottom: 0.5px solid $grey
+      background: $component-background
+      padding: 12px 0
+      line-height: 2
+      
+    &-icon
+      // font-size: 22px
+      // color: $primary-color
+      // border: 3px solid $primary-color
+      // border-radius: 50%
+      // padding: 3px 6px
+      position: absolute
+      z-index: 10
+      right: 16px
+      top: 16px
+      
+    &-content
+      background: $component-background
+      min-height: auto
+
+    &-details
+      height: 100vh
+      overflow: hidden
+
+    &-content > div
+      padding-bottom: 90px
+
+    &-footer
+      @extend .rounded-t-lg
+      background: $component-background
+      position: fixed
+      z-index: 1
+      bottom: 0
+      left: 0
+      right: 0
+      width: 100%
+      height: 64px
+      overflow: hidden
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2)
+      padding: 0
+
+// .ant-row-flex > div:not(.gutter-row),
+// .ant-row > div:not(.gutter-row)
+//   background: #00a0e9
+//   padding: 16px 0
+//   text-align: center
+//   border-radius: 0
+//   min-height: 30px
+//   margin-top: 8px
+//   margin-bottom: 8px
+//   color: #fff
+
+// .ant-row-flex > div:not(.gutter-row):nth-child(2n+1),
+// .ant-row > div:not(.gutter-row):nth-child(2n+1)
+//   background: rgba(0,160,233,.7)
+
+.header
+  // border-bottom: 0.5px solid $grey
+  background: $component-background
+  padding: 12px 0
+  line-height: 2
+  height: auto
+
+  &--title
+    @include lines(1)
+    @extend .text-h1
+    @extend .second-dark-color
+    margin: 0
+
+  &--subpgtitle
+    font-size: 24px
+    line-height: auto
+    margin: 0
+    color: $black
+
+  &--search > .ant-input
+    // @extend .shadow
+    @extend .border-none
+    @extend .rounded-xl
+    @extend .px-10
+    // @extend .mt-2
+    @extend .second-color
+
+
+  &--search > .ant-select
+    // @extend .shadow
+    @extend .border-none
+    @extend .rounded-lg
+    @extend .px-10
+    @extend .second-color
+
+
+
+.home
+  .read-news
+    @extend .shadow
+    @extend .border-none
+    @extend .rounded-lg
+    @extend .primary-color
+    white-space: break-spaces
+    height: auto
+    padding: 16px 20px
+    text-align: left
+    display: flex
+    align-items: center
+    flex-direction: column
+    > i
+      padding-top: 16px
+      font-size: 20px
+      margin: 0
+
+  .benefits
+    position: relative
+    display: flex
+    align-items: center
+
+  .read-benefits
+    @extend .shadow
+    @extend .border-none
+    @extend .rounded-0
+    @extend .primary-color
+    background-color: rgba(182, 210, 137, 0.5)
+    white-space: break-spaces
+    height: auto
+    margin-right: 20px
+    margin-left: 0
+    padding: 16px
+    text-align: left
+    display: flex
+    align-items: end
+    flex-direction: column
+    > i
+      font-size: 20px
+      margin: 0
+    &--img
+      @extend .rounded-l-lg
+      @extend .img-cover
+      position: absolute
+      width: 100%
+      height: 100%
+      
+  .article__category
+    @extend .mb-2
+    @extend .rounded-lg
+    @extend .text-caption
+    @extend .text-capitalize
+    border-color: transparent
+    background: rgba(201, 211, 175, 0.5)
+    color: $second-dark-color
+    padding: 4px 8px
+    height: auto

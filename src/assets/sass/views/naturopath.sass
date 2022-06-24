@@ -1,0 +1,144 @@
+// $naturopath-horizontal-width: calc((100vw / 2.5 ) - 16px)
+$naturopath-horizontal-width: 136px
+
+.naturopath-scrolls
+  @extend .pb-4
+  @extend .pr-4
+  overflow-x: scroll
+  overflow-y: hidden
+  display: flex
+
+.naturopath__item--horizontal
+  @extend .ml-4
+  @extend .c-pointer
+  @extend .rounded-lg
+  width: $naturopath-horizontal-width
+
+  > .ant-card-body
+    @extend .pa-4
+
+  .naturopath__img
+    @extend .rounded-circle
+    @extend .img-cover
+    @extend .px-5
+    @extend .mb-2
+    width: calc( #{$naturopath-horizontal-width} - 40px)
+
+  .naturopath__title
+    @extend .text-center
+    @extend .text-content
+    @extend .second-dark-color
+    @extend .mb-2
+    @include lines(2)
+
+  .naturopath__cate
+    @extend .text-center
+    @extend .text-caption
+    @extend .text-capitalize
+    @extend .second-color
+    @extend .mb-4
+    @include lines(1)
+
+  .naturopath__rate
+    @extend .text-center
+    @extend .second-color
+    @extend .font-weight-bold
+    font-size: $font-h4
+    justify-content: center
+    display: flex
+    line-height: 24px
+    i
+      @extend .px-1
+      color: $tertiary-color
+      font-size: $font-content
+      line-height: 24px
+
+.naturopath__item
+  @extend .mb-4
+  @extend .c-pointer
+  @extend .rounded-lg
+  width: 100%
+  > .ant-card-body
+    @extend .px-3
+    @extend .py-4
+  
+  .naturopath__img
+    @extend .mb-2
+    @extend .shadow
+    @extend .img-cover
+    @extend .rounded-circle
+    width: 100%
+    min-width: 80px
+
+  .naturopath__title
+    @include lines(1)
+    @extend .second-dark-color
+    @extend .text-h2
+
+  .naturopath__cate
+    @include lines(1)
+    @extend .text-body
+    @extend .second-color
+
+
+  .naturopath__desc
+    @include lines(1)
+    @extend .text-caption
+    @extend .text-capitalize
+
+  .naturopath__rate
+    font-size: $font-base
+
+  .naturopath__icon
+    @extend .rounded-circle
+    @extend .pa-2
+    background: $component-background
+    color: $primary-color
+    font-size: $font-h3
+
+  .naturopath__status
+    position: absolute
+    bottom: 5px
+    right: 5px
+    .ant-badge-status-dot
+      width: 15px
+      height: 15px
+
+  
+
+.naturopath__detail
+  .header-filter
+    background: url('~@/assets/image/naturodetailbackground.png') center center
+    background-size: cover
+    height: 20vh
+
+  .header-img
+    @extend .shadow
+    @extend .rounded-circle
+    position: absolute
+    left: 0
+    right: 0
+    margin: 0 auto
+    top: -120px
+    width: 180px
+
+  .naturopath__icon
+    @extend .rounded-circle
+    @extend .pa-2
+    background: $component-background
+    color: $primary-color
+    font-size: $font-h3
+    height: 35px
+    width: 35px
+    position: absolute
+    top: 0px
+
+  .naturopath__status
+    position: absolute
+    top: 30px
+    bottom: -100px
+    right: -100px
+    left: 10px
+    .ant-badge-status-dot
+      width: 20px
+      height: 20px

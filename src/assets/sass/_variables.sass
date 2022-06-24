@@ -1,0 +1,75 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+
+// The prefix to use on all css classes from ant.
+$ant-prefix: ant
+
+// An override for the html selector for theme prefixes
+$html-selector: html
+
+// -------- Colors -----------
+$primary-color: #92A65F
+$primary-dark-color: #4A5A36
+$second-color: #646464
+$second-dark-color: #282828
+$tertiary-color: #FF9052
+$info-color: #3EBDA1
+$success-color: green
+$processing-color: #3EBDA1
+$error-color: red
+$highlight-color: red
+$warning-color: yellow
+$normal-color: #d9d9d9
+$white: #fff
+$black: #050301
+$grey: #DBDADA
+$grey-1: #CCC8C8
+$grey-2: #999
+$grey-3: #646464
+$shadow-color: rgba(0, 0, 0, 0.2)
+$shadow-1-down: $grey
+$input-bg: $grey
+$input-hover-border-color: $grey
+$chat-color: #C9D3AF
+// Color used by default to control hover and active backgrounds and for
+// alert info backgrounds.
+
+// Base Scaffolding Variables
+// ---
+
+// Background color for `<body>`
+$body-background: #F5F5F5
+// Base background color for most components
+$component-background: #F5F5F5
+$font-family: 'Quicksand'
+$code-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace
+$text-color: fade($primary-color, 80%)
+$text-color-secondary: fade($second-color, 45%)
+$text-color-inverse: $white
+$text-color-grey: #949699
+$icon-color: inherit
+$icon-color-hover: fade($primary-color, 75%)
+$heading-color: fade($primary-color, 85%)
+$heading-color-dark: fade($white, 100%)
+$text-color-dark: fade($primary-color, 85%)
+$text-color-secondary-dark: fade($second-color, 65%)
+$text-selection-bg: $primary-color
+
+$font-base: 12px
+$font-h6: $font-base
+$font-h5: $font-base
+$font-h4: $font-base + 2
+$font-h3: $font-base + 4
+$font-h2: $font-base + 8
+$font-h1: $font-base + 12
+
+$font-body: $font-base + 4
+$font-content: $font-base +3
+$font-description: $font-base + 2
+$font-caption: $font-base
+
+@mixin lines($line-clamp)
+  display: -webkit-box
+  -webkit-line-clamp: $line-clamp
+  -webkit-box-orient: vertical
+  overflow: hidden
+  // white-space: break-spaces

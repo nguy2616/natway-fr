@@ -1,0 +1,116 @@
+.remedy-item
+  position: relative
+  width: 100%
+  min-height: 150px
+  @extend .my-4
+  .remedy
+    &-img
+      @extend .shadow
+      @extend .img-cover
+      position: absolute
+      z-index: 1
+      width: 40%
+      height: 140px
+
+    &-info
+      @extend .mt-6
+      @extend .ml-6
+      padding-left: calc(40% - 24px)
+      > .ant-card-body
+        @extend .pb-4
+
+    &-title
+      @extend .text-h3
+      @extend .second-dark-color
+      @extend .ma-0
+
+    &-desc
+      @extend .text-caption
+      @extend .second-dark-color
+      display: -webkit-box
+      -webkit-line-clamp: 2
+      -webkit-box-orient: vertical
+      overflow: hidden
+
+.remedy-details
+  @extend .shadow
+  @extend .rounded-t-xl
+  @extend .mt-n5
+  background: $component-background
+  position: relative
+  z-index: 99
+
+$remedy-horizontal-width: calc((100vw / 2 ) - 24px)
+
+.remedies-scrolls
+  @extend .pr-0
+  display: flex
+  flex-wrap: wrap
+
+.remedy__item
+  @extend .ml-0
+  @extend .mr-4
+  @extend .mt-2
+  @extend .mb-4
+  @extend .c-pointer
+  @extend .rounded-lg
+  width: $remedy-horizontal-width
+  > .ant-card-body
+    @extend .pa-2
+
+  .remedy__img
+    @extend .rounded-t-lg
+    @extend .img-cover
+    width: $remedy-horizontal-width
+    height: calc(#{$remedy-horizontal-width}/1.5)
+
+  .remedy__title
+    @extend .text-h3
+    @extend .second-dark-color
+    @include lines(2)
+    white-space: break-spaces
+    line-height: 1.4
+
+  .remedy__cate
+    @extend .text-caption
+    @extend .text-capitalize
+    @extend .second-color
+    @extend .mb-1
+    @include lines(2)
+    white-space: break-spaces
+    max-height: 48px
+
+  .remedy__icon
+    @extend .rounded-circle
+    @extend .pa-2
+    background: $component-background
+    color: $primary-color
+    font-size: $font-h3
+
+.remedy__details
+
+  .remedy__img
+    background: url('~@/assets/image/remedy-details.png') top center
+    width: 100vw
+    height: 258px
+    display: flex
+    justify-content: center
+
+    img
+      @extend .img-cover
+      width: 150px
+      height: 210px
+
+  .remedy__info
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  .remedy__icon
+    @extend .rounded-circle
+    @extend .pa-2
+    background: $component-background
+    color: $primary-color
+    font-size: $font-h3
+    position: relative
+    right: -60px
